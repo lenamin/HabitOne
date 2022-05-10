@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MyHabitsApp: App {
+    
+    @StateObject var singleHabit: HabitDataClass = HabitDataClass()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .environmentObject(HabitDataClass())
         }
     }
 }

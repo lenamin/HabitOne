@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		BFC120CF28239482007F5482 /* MyHabitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120CE28239482007F5482 /* MyHabitsApp.swift */; };
-		BFC120D128239482007F5482 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120D028239482007F5482 /* ContentView.swift */; };
+		BFC120D128239482007F5482 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120D028239482007F5482 /* MainTabView.swift */; };
 		BFC120D328239484007F5482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC120D228239484007F5482 /* Assets.xcassets */; };
 		BFC120D628239484007F5482 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC120D528239484007F5482 /* Preview Assets.xcassets */; };
+		BFC120DE2823950D007F5482 /* ProgressingHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120DD2823950D007F5482 /* ProgressingHabitView.swift */; };
+		BFC120E02823955A007F5482 /* SixtyHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120DF2823955A007F5482 /* SixtyHabitsView.swift */; };
+		BFC120E228239658007F5482 /* NewHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120E128239658007F5482 /* NewHabitsView.swift */; };
+		BFC120E42823967C007F5482 /* FinishedHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120E32823967C007F5482 /* FinishedHabitsView.swift */; };
+		BFC120EB282396EE007F5482 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120EA282396EE007F5482 /* Data.swift */; };
+		BFC120ED2823A42B007F5482 /* WaveAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120EC2823A42B007F5482 /* WaveAnimationView.swift */; };
+		BFC120EF2823B3AA007F5482 /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120EE2823B3AA007F5482 /* Delete.swift */; };
+		BFC120F52823C081007F5482 /* HabitContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC120F42823C081007F5482 /* HabitContent.swift */; };
+		BFC120F72823E515007F5482 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = BFC120F62823E515007F5482 /* posts.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFC120CB28239482007F5482 /* MyHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC120CE28239482007F5482 /* MyHabitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHabitsApp.swift; sourceTree = "<group>"; };
-		BFC120D028239482007F5482 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFC120D028239482007F5482 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		BFC120D228239484007F5482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC120D528239484007F5482 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFC120DD2823950D007F5482 /* ProgressingHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressingHabitView.swift; sourceTree = "<group>"; };
+		BFC120DF2823955A007F5482 /* SixtyHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtyHabitsView.swift; sourceTree = "<group>"; };
+		BFC120E128239658007F5482 /* NewHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitsView.swift; sourceTree = "<group>"; };
+		BFC120E32823967C007F5482 /* FinishedHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedHabitsView.swift; sourceTree = "<group>"; };
+		BFC120EA282396EE007F5482 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BFC120EC2823A42B007F5482 /* WaveAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimationView.swift; sourceTree = "<group>"; };
+		BFC120EE2823B3AA007F5482 /* Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
+		BFC120F42823C081007F5482 /* HabitContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitContent.swift; sourceTree = "<group>"; };
+		BFC120F62823E515007F5482 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +69,11 @@
 		BFC120CD28239482007F5482 /* MyHabits */ = {
 			isa = PBXGroup;
 			children = (
+				BFC120E9282396E4007F5482 /* Model */,
+				BFC120DC282394F6007F5482 /* View */,
 				BFC120CE28239482007F5482 /* MyHabitsApp.swift */,
-				BFC120D028239482007F5482 /* ContentView.swift */,
 				BFC120D228239484007F5482 /* Assets.xcassets */,
+				BFC120F62823E515007F5482 /* posts.json */,
 				BFC120D428239484007F5482 /* Preview Content */,
 			);
 			path = MyHabits;
@@ -65,6 +85,29 @@
 				BFC120D528239484007F5482 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFC120DC282394F6007F5482 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFC120D028239482007F5482 /* MainTabView.swift */,
+				BFC120DD2823950D007F5482 /* ProgressingHabitView.swift */,
+				BFC120DF2823955A007F5482 /* SixtyHabitsView.swift */,
+				BFC120E128239658007F5482 /* NewHabitsView.swift */,
+				BFC120E32823967C007F5482 /* FinishedHabitsView.swift */,
+				BFC120EC2823A42B007F5482 /* WaveAnimationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFC120E9282396E4007F5482 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFC120EA282396EE007F5482 /* Data.swift */,
+				BFC120EE2823B3AA007F5482 /* Delete.swift */,
+				BFC120F42823C081007F5482 /* HabitContent.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC120D628239484007F5482 /* Preview Assets.xcassets in Resources */,
+				BFC120F72823E515007F5482 /* posts.json in Resources */,
 				BFC120D328239484007F5482 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +181,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC120D128239482007F5482 /* ContentView.swift in Sources */,
+				BFC120EF2823B3AA007F5482 /* Delete.swift in Sources */,
+				BFC120ED2823A42B007F5482 /* WaveAnimationView.swift in Sources */,
+				BFC120E228239658007F5482 /* NewHabitsView.swift in Sources */,
+				BFC120E42823967C007F5482 /* FinishedHabitsView.swift in Sources */,
+				BFC120DE2823950D007F5482 /* ProgressingHabitView.swift in Sources */,
+				BFC120F52823C081007F5482 /* HabitContent.swift in Sources */,
+				BFC120D128239482007F5482 /* MainTabView.swift in Sources */,
 				BFC120CF28239482007F5482 /* MyHabitsApp.swift in Sources */,
+				BFC120E02823955A007F5482 /* SixtyHabitsView.swift in Sources */,
+				BFC120EB282396EE007F5482 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
