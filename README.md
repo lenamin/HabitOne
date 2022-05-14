@@ -1,2 +1,2 @@
-# HabitOne
-NC1 Project
+# Habit One
+Nano Challenge1 Individual Project
